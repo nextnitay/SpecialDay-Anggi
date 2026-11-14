@@ -683,7 +683,7 @@
                         { type: "video", url: "video (10).mp4" },
                         { type: "image", url: "foto (7).jpg" },
                         { type: "image", url: "foto (19).jpg" },
-                        { type: "video", url: "video (1).mp4" },
+                        { type: "video", url: "video (5).mp4" },
                         { type: "image", url: "foto (34).jpg" },
                         { type: "image", url: "foto (1).jpg" }
                     ]
@@ -1641,7 +1641,7 @@
             if (state.pol.media.length < 2) return;
             const isVideo = state.current >= 0 && state.pol.media[state.current].type === "video";
             // Random duration between 3 to 7 seconds for photos (a little longer for video)
-            const duration = Math.random() * 4000 + (isVideo ? 15000 : 3000);
+            const duration = Math.random() * 5000 + (isVideo ? 10000 : 1000);
             state.timer = setTimeout(() => advanceMedia(state, false), duration);
         }
 
